@@ -4,7 +4,7 @@
 <h1>MY NEW BLOG</h1>
 
 
-<h3>Chinmay has written {{ blogs.count }} blog {{ blogs.count|pluralize }}</h3>
+<h3>Chinmay has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3>
 {% for blog in blogs %}
 
 <h5>{{ blog.date|date:'M d Y'|upper }}</h5>
